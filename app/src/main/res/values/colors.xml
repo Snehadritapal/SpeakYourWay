@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primaryColor">#007bff</color> <!-- Vibrant Blue -->
+    <color name="primaryDarkColor">#0056b3</color> <!-- Darker Blue -->
+    <color name="accentColor">#00c3ff</color> <!-- Light Cyan -->
+    <color name="backgroundColor">#f0f4f8</color> <!-- Light Grayish Blue -->
+    <color name="buttonColor">#007bff</color>
+    <color name="textColor">#212121</color> <!-- Dark Gray -->
+    <color name="iconColor">#ffffff</color>
+    <color name="inputTextColor">#424242</color>
+    <color name="borderColor">#90CAF9</color> <!-- Light Blue -->
+    <color name="black">#000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="grey">#808080</color>
+
+
+
+
+</resources>

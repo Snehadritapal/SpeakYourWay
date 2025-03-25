@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "971051605388",
+    "project_id": "speakyourway-260c8",
+    "storage_bucket": "speakyourway-260c8.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:971051605388:android:57d324cf04724d58bf4aa9",
+        "android_client_info": {
+          "package_name": "com.example.speakyourway"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD5mNc8URzrg-2wbynWl4LsnMh72RZGDNo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

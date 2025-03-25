@@ -1,0 +1,144 @@
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_bg"
+    android:id="@+id/main"
+    tools:context=".MainActivity">
+
+    <!-- App Name -->
+    <TextView
+        android:id="@+id/appName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Speak Your Way"
+        android:textSize="28sp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="30dp"/>
+
+    <!-- From Language Spinner -->
+    <Spinner
+        android:id="@+id/fromLanguage"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/spinner_border"
+        android:hint="Enter text to translate"
+        android:minHeight="48dp"
+        android:popupBackground="@color/backgroundColor"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toStartOf="@+id/toLanguage"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/appName" />
+
+    <ImageButton
+        android:id="@+id/arrowButton"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:src="@drawable/ic_arrow"
+        android:background="@null"
+        android:contentDescription="Arrow Icon"
+        app:layout_constraintTop_toTopOf="@+id/fromLanguage"
+        app:layout_constraintBottom_toBottomOf="@+id/fromLanguage"
+        app:layout_constraintStart_toEndOf="@+id/fromLanguage"
+        app:layout_constraintEnd_toStartOf="@+id/toLanguage"
+        app:tint="@color/white" />
+
+    <!-- To Language Spinner -->
+    <Spinner
+        android:id="@+id/toLanguage"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/spinner_border"
+        android:minHeight="48dp"
+        android:hint="Enter text to translate"
+        android:popupBackground="@color/backgroundColor"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/fromLanguage"
+        app:layout_constraintTop_toBottomOf="@+id/appName" />
+
+    <!-- Input Text Field -->
+    <EditText
+        android:id="@+id/inputText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Enter text to translate"
+        android:textSize="18sp"
+        android:textColor="@color/inputTextColor"
+        android:background="@drawable/edittext_bg"
+        android:padding="16dp"
+        app:layout_constraintTop_toBottomOf="@+id/fromLanguage"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="20dp"/>
+
+    <Button
+        android:id="@+id/translateButton"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/button_shadow"
+        android:text="Translate"
+        android:textColor="@color/textColor"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/inputText" />
+
+    <!-- Mic Button -->
+    <ImageButton
+        android:id="@+id/micButton"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/button_rounded"
+        android:elevation="8dp"
+        android:src="@drawable/ic_mic"
+        app:layout_constraintEnd_toStartOf="@+id/translateButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/inputText"
+        app:tint="@color/iconColor" />
+
+    <!-- Speaker Button -->
+    <ImageButton
+        android:id="@+id/speakerButton"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@drawable/ic_speaker"
+        android:background="@drawable/button_rounded"
+        android:elevation="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/inputText"
+        app:layout_constraintStart_toEndOf="@+id/translateButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="20dp"
+        app:tint="@color/iconColor" />
+
+    <!-- Translated Text -->
+    <TextView
+        android:id="@+id/translatedText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Translation will appear here"
+        android:textSize="18sp"
+        android:textColor="@color/inputTextColor"
+        android:gravity="center"
+        android:background="@drawable/edittext_bg"
+        android:elevation="4dp"
+        android:padding="16dp"
+        app:layout_constraintTop_toBottomOf="@+id/micButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="20dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">SpeakYourWay</string>
+    <!-- res/values/strings.xml -->
+
+        <string-array name="languages_array">
+            <item>select..</item>
+            <item>English</item>
+            <item>Tamil</item>
+            <item>Telugu</item>
+            <item>Hindi</item>
+            <item>Bengali</item>
+            <item>Arabic</item>
+            <item>Spanish</item>
+            <item>French</item>
+            <item>German</item>
+            <item>Italian</item>
+            <item>Gujarati</item>
+            <item>Kannada</item>
+            <item>Marathi</item>
+
+            <!-- Add other supported languages here -->
+        </string-array>
+
+
+</resources>

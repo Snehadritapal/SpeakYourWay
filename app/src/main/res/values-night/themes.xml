@@ -1,0 +1,25 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base Theme for Dark Mode -->
+    <style name="Base.Theme.SpeakYourWay" parent="Theme.Material3.Dark.NoActionBar">
+        <!-- Primary and Secondary Colors -->
+        <item name="colorPrimary">#BB86FC</item>
+        <item name="colorOnPrimary">#000000</item>
+        <item name="colorSecondary">#03DAC5</item>
+        <item name="colorOnSecondary">#000000</item>
+
+        <!-- Background and Surface Colors -->
+        <item name="android:windowBackground">#121212</item>
+        <item name="colorSurface">#1E1E1E</item>
+        <item name="colorOnSurface">#FFFFFF</item>
+
+        <!-- Status and Navigation Bar Colors -->
+        <item name="android:statusBarColor">#3700B3</item>
+        <item name="android:navigationBarColor">#121212</item>
+
+        <!-- Fonts -->
+        <item name="android:fontFamily">@font/roboto_medium</item>
+    </style>
+
+    <!-- Inheriting the base theme -->
+    <style name="Theme.SpeakYourWay" parent="Base.Theme.SpeakYourWay" />
+</resources>
